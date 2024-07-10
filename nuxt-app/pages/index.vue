@@ -41,6 +41,7 @@ function goToIndex() {
 function showAlert(_msg) {
     toastr.error(_msg)
 }
+// .........
 </script>
 
 <style>
