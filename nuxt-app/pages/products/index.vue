@@ -7,7 +7,7 @@
             <ProductCard :product="product" />
         </div>
     </div>
-    <div v-if="Error">
+    <div v-if="rror">
         ERROR...
     </div>
 
