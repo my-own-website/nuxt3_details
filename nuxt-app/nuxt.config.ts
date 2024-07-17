@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   
   app:{
     head:{
-      // title:"MY App",
+      title:"MY App",
       // viewport:"width=device-width, initial-scale=1",
       // charset:"utf-8",
       // meta:[
