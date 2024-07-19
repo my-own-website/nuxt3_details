@@ -8,7 +8,7 @@
                 <p class="font-bold text-gray-500 m-4">title : {{ product.title }}</p>
                 <p class="font-bold text-gray-500 m-4">price : {{ product.price }}</p>
                 <h3 class="font-bold text-gray-500 m-4">desc : </h3>
-                <p class="m-7">{{ product.descriptiom }}</p>
+                <p class="m-7">{{ product.description }}</p>
             </div>
         </div>
     </div>

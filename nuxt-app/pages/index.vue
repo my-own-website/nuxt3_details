@@ -36,7 +36,7 @@ const id = ref(1)
 
 const url = computed(()=> `https://fakestoreapi.com/products/${id.value}`)
 
-const {data:fetchProduct} = useFetch(url)
+const {data:fetchProduct} = await useFetch(url)
 
 const nextTitle = async() => {
     id.value++
