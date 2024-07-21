@@ -1,5 +1,5 @@
 <template>
-    <li>
+    <li class="br">
         {{ props.item.text }}
     </li>
 </template>

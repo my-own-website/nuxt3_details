@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "name":"Learn Docker",
+        "price":10.99,
+        "image":"docker.jpg",
+        "slug":"docker",
+        "stripedPricedId":"price_"
+    },
+    {
+        "id":2,
+        "name":"Learn Nuxt",
+        "price":99.01,
+        "image":"nuxt.png",
+        "slug":"nuxt",
+        "stripedPricedId":"price_"
+    }
+]
