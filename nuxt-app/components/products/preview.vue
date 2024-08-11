@@ -1,11 +1,11 @@
 <template>
     
     <div class="max-w-sm bg-white rounded-lg border border-indigo-200 shadow-md dark:bg-gray-800">
-        
-        <nuxt-link :to="`products/${product.slug}`">
+        product::{{ product }}
+        <nuxt-link :to="`/products/${product.slug}`">
             <div>
                 <img class="rounded-t-lg h-80 w-96 object-cover hover:animate-pulse"
-                    :src="`/products/${props.product.image}`" :alt="`${product.name}'s image'`">
+                    :src="`/products/${product.image}`" :alt="`${product.name}'s image'`">
             </div>
             <div class="p-5">
                 <div>

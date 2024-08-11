@@ -34,7 +34,7 @@
     const productsStote = useProductsStore()
     const cartStore = useCartStore()
     const route = useRoute()
-    const product = computed(()=>{
+    const product =computed(()=>{
         return productsStote.products.find(product=>{
             return product.slug === route.params.slug
         })

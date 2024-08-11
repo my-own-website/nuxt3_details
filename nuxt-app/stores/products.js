@@ -2,11 +2,11 @@ import productss from '../data/products.json'
 import { defineStore } from 'pinia'
 
 export const useProductsStore = defineStore(
-    'products-stote',
+    'products-store',
     {
         state : ()=>(
             {
-                products:[]
+                products:productss
             }
         ),
         getters:{},
