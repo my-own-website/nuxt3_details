@@ -5,7 +5,7 @@
             <nuxt-link to="/" class="font-bold">Make Your Dream !</nuxt-link>
             <ul class="flex gap-4">
                 <li><nuxt-link to="/" class="font-bold">HOME</nuxt-link></li>
-                <li><nuxt-link to="/products" class="font-bold">PRODUCTS</nuxt-link></li>
+                <li><nuxt-link to="/prods" class="font-bold">PRODUCTS</nuxt-link></li>
                 <li><nuxt-link to="/products/fewfr" class="font-bold">TEST</nuxt-link></li>
             </ul>
         </nav>

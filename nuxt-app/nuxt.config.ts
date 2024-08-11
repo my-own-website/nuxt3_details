@@ -1,15 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  buildModules: [
-    // Nuxt 2 only:
-    // https://composition-api.nuxtjs.org/getting-started/setup#quick-start
-    '@nuxtjs/composition-api/module',
-    '@pinia/nuxt',
-  ],
-  modules: ['@pinia/nuxt'],
+ 
+  modules: ['@pinia/nuxt'],      
   pinia: {
     storesDirs: ['./stores/**', './custom-folder/stores/**'],
   },
+  
   postcss: {
     plugins: {
       tailwindcss: {},

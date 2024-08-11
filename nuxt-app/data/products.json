@@ -3,7 +3,7 @@
         "id":1,
         "name":"Learn Docker",
         "price":10.99,
-        "image":"docker.jpg",
+        "image":"img1.jpg",
         "slug":"docker",
         "stripedPricedId":"price_"
     },
@@ -11,7 +11,7 @@
         "id":2,
         "name":"Learn Nuxt",
         "price":99.01,
-        "image":"nuxt.png",
+        "image":"img2.jpg",
         "slug":"nuxt",
         "stripedPricedId":"price_"
     }

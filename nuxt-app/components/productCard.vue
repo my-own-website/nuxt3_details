@@ -2,7 +2,7 @@
     <div class="text-center shadow-md h-full bg-white rounded-md p-3">
         <img :src="product.image" class="thumb">
         <p class="font-bold text-gray-500 m-4">{{ product.title }}</p>
-        <nuxt-link :to="`/products/${product.id}`">See More</nuxt-link>
+        <nuxt-link :to="`/prods/${product.id}`">See More</nuxt-link>
     </div>
 </template>
 

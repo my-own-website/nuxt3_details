@@ -1,5 +1,6 @@
 <template>
     <div>
+        products:{{ products }}
         <div class="flex justify-around mt-20" v-if="products">
             <div v-for="product in products" :key="product.id">
                 <ProductsPreview :product="product"/>
