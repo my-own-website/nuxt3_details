@@ -1,5 +1,6 @@
 
 import { defineStore } from 'pinia'
+import { useRuntimeConfig } from '#app'
 
 export const useCartStore = defineStore (
     'cart-store',
@@ -12,16 +13,18 @@ export const useCartStore = defineStore (
         getters:{},
         actions:{
             async addToCart (itemPayLoad){
+                console.log('clickeddddd');
                 const existingItem = this.items.find(item=>{
-                    return item.productId === itemPayLoad.id
+                    return item?.productId == itemPayLoad.id
                 })
+                console.log("🚀 ~ existingItem ~ existingItem:", existingItem)
                 if(existingItem){
                     let existingItemIndex = this.items.findIndex(item=>{
-                        item.productId === existingItem.productId
+                        item.productId == existingItem.productId
                     })
 
                     existingItem.quantity = existingItem.quantity+1
-                    existingItem.subTotal = itemPayLoad.price*existingItem*quantity
+                    existingItem.subTotal = itemPayLoad.price*existingItem.quantity
                     this.items[existingItemIndex] = existingItem
                 }else{
                     this.items.push({

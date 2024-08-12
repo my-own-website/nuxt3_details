@@ -1,18 +1,18 @@
 [
     {
         "id":1,
-        "name":"Learn Docker",
+        "name":"Laptop1",
         "price":10.99,
         "image":"img1.jpg",
-        "slug":"docker",
+        "slug":"Laptop1",
         "stripedPricedId":"price_"
     },
     {
         "id":2,
-        "name":"Learn Nuxt",
+        "name":"Laptop2",
         "price":99.01,
         "image":"img2.jpg",
-        "slug":"nuxt",
+        "slug":"Laptop2",
         "stripedPricedId":"price_"
     }
 ]

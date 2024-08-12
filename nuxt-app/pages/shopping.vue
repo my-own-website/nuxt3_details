@@ -7,10 +7,13 @@
             </div>
             
         </div>
-    </div>
+    </div >
 </template>
 
 <script setup>
+    definePageMeta({
+        middleware:'check'
+    })
     import {useProductsStore} from '../stores/products'
     const productsStore = useProductsStore()
     const products = computed(()=>{
