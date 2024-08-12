@@ -1,7 +1,7 @@
 <template>
     
     <div class="max-w-sm bg-white rounded-lg border border-indigo-200 shadow-md dark:bg-gray-800">
-        product::{{ product }}
+        <!-- product::{{ product }} -->
         <nuxt-link :to="`/products/${product.slug}`">
             <div>
                 <img class="rounded-t-lg h-80 w-96 object-cover hover:animate-pulse"
@@ -16,6 +16,8 @@
                 <p class="mb-3 font-medium text-indigo-700 dark:text-gray-400">
                     ${{ product.price }}
                 </p>
+                <!-- <p>Date : {{ today }}</p> -->
+                <p>today Date : {{ $todayDate }}</p>
             </div>
         </nuxt-link>
     </div>
@@ -28,4 +30,7 @@ const props = defineProps({
         required: true
     }
 })
+
+// const nuxtApp = useNuxtApp()
+// const today = nuxtApp.today
 </script>
