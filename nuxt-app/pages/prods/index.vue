@@ -12,7 +12,7 @@
          <!-- {{ error }} -->
     </div>
 
-    <a @click="limit">limit</a>
+    <a @click="limitFunc">limit</a>
 </template>
 
 <script setup>
@@ -20,7 +20,7 @@
     const number = ref(8)
     const {data:products, pending ,error, refresh} = await useAsyncData("products",()=>$fetch(`api/products?limit=${number.value}`))
 
-    const limit = ()=>{
+    const limitFunc = ()=>{
         number.value--
         refresh()
     }

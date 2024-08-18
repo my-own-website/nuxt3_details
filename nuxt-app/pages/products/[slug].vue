@@ -2,7 +2,7 @@
     
     <Head>
         <Title>
-            {{ product?.name }}
+            {{ product?.title }}
         </Title>
     </Head>
     <div>
@@ -10,13 +10,13 @@
         <div class="w-1/2">
             <div>
                 <img class="rounded-3xl border-indigo-200 hover:animate-pulse"
-                    :src="`/products/${product?.image}`" :alt="`${product?.name}'s image'`">
+                    :src="`${product?.image}`" :alt="`${product?.title}'s image'`">
             </div>
         </div>
         <div class="w-1/2 flex flex-col items-center justify-center">
             <div>
                 <h2 class="text-5xl text-indigo-700">
-                    {{ product?.name }}
+                    {{ product?.title }}
                 </h2>
             </div>
             <div class="my-8 flex flex-col items-center justify-center" >
@@ -38,11 +38,16 @@
     const route = useRoute()
     console.log('route.params.slug', route.params.slug);
    
-    const product =computed(()=>{
-        return productsStote.products.find(product=>{
-            return product.slug == route.params.slug
-        })
-    })
+    // const product =computed(()=>{
+    //     return productsStote.products.find(product=>{
+    //         return product.slug == route.params.slug
+    //     })
+    // })
+
+    // instead of this👆 , we can use this👇
+    const {data:product, pending ,error, refresh} = await useAsyncData("product",()=>$fetch(`/api/singleProduct/${route.params.slug}`))
+
+
     console.log("🚀 ~ product ~ producttttttt:", product)
 
     async function addToCart(){
